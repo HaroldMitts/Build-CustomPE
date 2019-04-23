@@ -9,3 +9,6 @@ There is a 32-bit and 64-bit version.
 * WinPE-NetFx
 * WinPE-PowerShell
 * WinPE-DismCmdlets
+
+## For more details on building and customizing WinPE, see this Microsoft website:
+https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-mount-and-customize
