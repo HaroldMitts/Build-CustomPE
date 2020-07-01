@@ -37,7 +37,9 @@ Build a new Windows PE (WinPE) and add common Optional Components (OCs) to exten
 * WinPE-WinReCfg
 * WinPE-WMI
 
-> Note: For each WinPE OC, you also need to install its language components, located in the language subfolder for the language you want to provide support for. For example, Polish language Optional Component support is available from `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\pl-pl`. 
+> Note: For each WinPE OC, you also need to install its language components, located in the language subfolder for the language you want to provide support for. For example, Polish language Optional Component support is available from `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\pl-pl`. Several of the OCs are font sets and do not have corresponding language components. You would add these, for example, Japanese or Korean font support, to enable Japanese or Korean character sets in WinPE.
+>
+> More details on WinPE are available on Microsoft.com at this URL: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro
 
 ## Getting Started
 Before you can build and customize a WinPE, you need to install the Windows ADK onto your [Technician PC](TechnicianPC-lab.md)
