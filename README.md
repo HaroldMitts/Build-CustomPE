@@ -47,6 +47,9 @@ What can you do with WinPE? A lot... but according to Microsoft, it is intended 
 
 Before you can build and customize a WinPE, you need to install the Windows ADK onto your [Technician PC](https://github.com/HaroldMitts/wininstall/blob/master/TechnicianPC-lab.md)
 
+## Requirements
+Install the Windows ADK on your Technician PC. If you do not already have the latest Windows ADK installed (including the Windows PE add-on), you can download it from Microsoft at this link: https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install
+
 ## Build WinPE
 After you have installed the Windows ADK on your Technician PC, launch the Deployment and Imaging Tools Environment (the Command Line Interface (CLI)for the Windows ADK) and run one of the following commands to create a new WinPE;
 
