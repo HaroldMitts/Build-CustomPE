@@ -109,6 +109,42 @@ dism /image:"c:\Mount\WinPE" /add-package /packagepath:"c:\Program Files (x86)\W
 dism /image:"c:\Mount\WinPE" /add-package /packagepath:"c:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-DismCmdlets_en-us.cab"
 ````
 
+> After you have created and customized WinPE, you can create bootable media, or load the WinPE into WDS
+
+### Create a Bootable ISO
+Often it is useful to perform tests using virtual PCs. To create a bootable WinPE for use with a virtual machine (VM), it is easiest to attach an ISO file to the VM. Some vendor software allows attaching USB devices, but most do not and for this, you should use a ISO file. 
+
+To generate a bootable ISO file, enter the following command into the Deployment and Imaging Tools Environment CLI;
+
+````
+makewinpemedia /iso C:\WinPE\x64 D:\x64.iso
+````
+
+> The above command will create a 64-bit WinPE ISO file named x64.iso. You can modify the path or file name as needed.
+
+The 32-bit command is similar, as follows;
+
+````
+makewinpemedia /iso C:\WinPE\x86 D:\x86.iso
+````
+
+### Create a Bootable USB
+To create a bootable WinPE on USB, enter the following command into the Deployment and Imaging Tools Environment CLI;
+
+64-bit version;
+
+````
+makewinpemedia /ufd C:\WinPE\x64 F:
+````
+
+32-bit version;
+
+> Note: The above command will format and erase the USB F drive and install WinPE. You may need to modify the path as needed.
+
+### Add WinPE to Windows Deployment Services (WDS)
+An alternative method to boot to WinPE is accomplished by adding the boot.wim file to WDS. If you look inside the Media/Sources subfolders of any WinPE you create, you will find a boot.wim file. This is the WinPE image and it can be added to WDS directly. To do so, simply open the WDS console and select the `Boot Images` node and right-click, selecting the option to add a Boot Image. Follow the wizard to name the Boot Image and then you can boot to the WinPE over the network.
+
+For more information, see [this Microsoft site](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj648426(v=ws.11)#steps-for-adding-images).
 
 # Additional Related Resources
 Desktop manufacturing
@@ -117,8 +153,14 @@ https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/
 Windows PE
 https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro
 
+MakeWinPEMedia Command-Line Options
+https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/makewinpemedia-command-line-options
+
 Windows 10 DISM Command-Line Options
 https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/deployment-image-servicing-and-management--dism--command-line-options 
 
 Windows Commands
 https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands 
+
+Windows Deployment Services
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj648426(v=ws.11) 
