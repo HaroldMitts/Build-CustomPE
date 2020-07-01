@@ -114,11 +114,11 @@ dism /image:"c:\Mount\WinPE" /add-package /packagepath:"c:\Program Files (x86)\W
 Desktop manufacturing
 https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/
 
+Windows PE
+https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro
+
 Windows 10 DISM Command-Line Options
 https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/deployment-image-servicing-and-management--dism--command-line-options 
 
 Windows Commands
 https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands 
-
-Windows PE
-https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro
