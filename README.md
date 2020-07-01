@@ -42,6 +42,9 @@ Build a new Windows PE (WinPE) and add common Optional Components (OCs) to exten
 > More details on WinPE are available on Microsoft.com at this URL: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro
 
 ## Getting Started
+
+What can you do with WinPE? A lot... but according to Microsoft, it is intended to be used to install Windows onto devices and for use with Windows Recovery.
+
 Before you can build and customize a WinPE, you need to install the Windows ADK onto your [Technician PC](https://github.com/HaroldMitts/wininstall/blob/master/TechnicianPC-lab.md)
 
 ## Build WinPE
