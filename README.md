@@ -149,7 +149,7 @@ makewinpemedia /ufd C:\WinPE\x64 F:
 makewinpemedia /ufd C:\WinPE\x86 F:
 ````
 
-> Note: The above command will format and erase the USB F drive (your USB drive letter may be different) and install WinPE. You may need to modify the path as needed.
+> Note: The above commands will format and erase the USB F drive (your USB drive letter may be different) and install WinPE. You may need to modify the path as needed.
 
 ### Add WinPE to Windows Deployment Services (WDS)
 An alternative method to boot to WinPE is accomplished by adding the boot.wim file to WDS. If you look inside the Media/Sources subfolders of any WinPE you create, you will find a boot.wim file. This is the WinPE image and it can be added to WDS directly. To do so, simply open the WDS console and select the `Boot Images` node and right-click, selecting the option to add a Boot Image. Follow the wizard to name the Boot Image and then you can boot to the WinPE over the network.
