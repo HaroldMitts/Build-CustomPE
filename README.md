@@ -65,8 +65,7 @@ copype amd64 c:\WinPE\x64
 
 The new WinPE will be created and is ready for use. However, it's functionality may not support some of the actions you require. If you need WinPE to support more advanced functionality, you need to add that functionality before it can be supported in WinPE. You do this by adding WinPE Optional Components, or OCs, as shown in the examples below. 
 
-## For more details on building and customizing WinPE, see this Microsoft website:
-https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-mount-and-customize
+> For more details on building and customizing WinPE, see this Microsoft website: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-mount-and-customize
 
 ### Extend the capabilities of the WinPE by adding WinPE Optional Components (OCs) using DISM
 
