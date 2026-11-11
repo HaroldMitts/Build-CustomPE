@@ -1,4 +1,7 @@
 # Build a Custom Windows PE and add Optional Components
+
+**Status: No longer maintained** — This project is no longer actively maintained and is provided as-is, with no updates, compatibility fixes, or support. Its instructions target legacy Windows PE and Windows ADK workflows and may not work with current Windows or ADK releases. Verify against current Microsoft documentation before use, especially in production.
+
 Build a new Windows PE (WinPE) and add common Optional Components (OCs) to extend the capabilities of the Windows PE you build.
 
 ## WinPE Optional Components included;
